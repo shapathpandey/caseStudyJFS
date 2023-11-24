@@ -1,0 +1,58 @@
+package com.example.Todo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.example.Todo.service.ToDoService;
+
+@Controller
+public class ToDoController {
+
+	@Autowired
+	private ToDoService service;
+	
+	@GetMapping({"/","viewToDoList"})
+	public String viewAllToDoItems(Model model) {
+		//model because we have to return it
+		model.addAttribute("list", service.getAllToDoItems());
+		return "ViewToDoList";
+	}
+	
+	@PostMapping("/updateToDoStatus/{id}")
+	public String updateToDoStatus(@PathVariable Long id) {
+		if(service.updateStatus(id)) {
+			return "redirect:/viewToDoList";
+		}
+		return "redirect:/viewToDoList";
+	}
+	
+	@GetMapping
+	public String addToDoItem() {
+		
+	}
+	
+	@PostMapping
+	public String saveToDoItem() {
+		
+	}
+	
+	@GetMapping
+	public String editToDoItem() {
+		
+	}
+	
+	@PostMapping
+	public String editSaveToDoItem() {
+		
+	}
+	
+	@GetMapping
+	public String deleteToDoItem() {
+		
+	}
+}
+

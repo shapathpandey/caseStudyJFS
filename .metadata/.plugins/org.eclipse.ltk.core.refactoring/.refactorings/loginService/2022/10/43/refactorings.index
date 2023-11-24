@@ -1,0 +1,13 @@
+1665949702017	Rename package 'com.cg.movieInfoService'
+1665949772246	Rename type 'MovieInfoServiceApplication'
+1665949804751	Rename type 'MovieResource'
+1665949838154	Rename type 'Movie'
+1665952092239	Delete element
+1665989643592	Rename resource 'login.jsp'
+1665989823156	Rename resource 'login.html'
+1665990536827	Delete element
+1666080623158	Rename type 'IndexController'
+1666139400276	Delete element
+1666139948018	Rename resource 'index.html'
+1666155825323	Rename resource 'registerPage.html'
+1666155839780	Rename resource 'login.html'

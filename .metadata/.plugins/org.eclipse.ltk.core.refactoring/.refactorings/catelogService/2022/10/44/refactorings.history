@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;catelogService/src/main/resources/templates/productAdded.html&apos; to &apos;cartCleared.html&apos;" description="Rename resource &apos;productAdded.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/productAdded.html" name="cartCleared.html" stamp="1666926947605" updateReferences="true"/>
+</session>
